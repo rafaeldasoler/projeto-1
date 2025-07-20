@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* 🔁 Reset básico */
 * {
   margin: 0;
@@ -15,292 +17,56 @@ html, body {
   margin: 0 auto;
 }
 
-/* 📄 Corpo */
+/* Corpo */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
-}
-
-/* 🔗 Links padrão */
-a {
-  color: #005f86;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-  background-color: #00486a;
-  color: #fff;
-  outline: none;
-}
-
-/* 🔳 Imagens */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.02);
 }
 
 /* 🔝 Cabeçalho e navegação */
 header {
   background-color: #ececec;
-  padding: 20px;
-  text-align: center;
+  padding: 5px;
 }
 
-nav ul {
+nav {
+  border: 2px solid blue;
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  list-style: none;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
 }
 
+.logo {
+  border: 2px solid blueviolet;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.nav-list {
+  border: 2px solid greenyellow;
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 15px;
+}
+
+/**
 nav ul li a {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+  **/
 
-/* 🧾 Títulos */
-h1, h2, h3 {
-  margin-bottom: 10px;
-}
 
-/* 📦 Seções */
-section {
-  padding: 40px 20px;
-  border-bottom: 1px solid #ddd;
-  background-color: #fff;
-}
 
-/* ✏️ Textos e listas */
-p {
-  margin-bottom: 20px;
-}
 
-ul {
-  margin-bottom: 20px;
-  padding-left: 20px;
-}
 
-li {
-  margin-bottom: 8px;
-}
 
-/* 📑 Artigos */
-article {
-  margin-bottom: 40px;
-}
 
-/* 🟦 Botões e links com aparência de botão */
-.btn,
-button,
-a[href^="https://wa.me"],
-a[href^="mailto:"],
-a[href^="tel:"] {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #005f86;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn:hover,
-.btn:focus,
-button:hover,
-button:focus,
-a[href^="https://wa.me"]:hover,
-a[href^="mailto:"]:hover,
-a[href^="tel:"]:hover {
-  background-color: #00486a;
-  text-decoration: underline;
-  outline: none;
-}
-
-/* 🦶 Rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #ececec;
-  font-size: 14px;
-}
-
-/* 📱 Responsividade mobile-first */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  section {
-    padding: 20px 10px;
-  }
-
-  button,
-  .btn,
-  a[href^="https://wa.me"],
-  a[href^="mailto:"],
-  a[href^="tel:"] {
-    width: 100%;
-    padding: 12px;
-  }
-
-  h1, h2, h3 {
-    text-align: center;
-  }
-}
-
-/* 📐 Responsividade intermediária (tablets) */
-@media (max-width: 992px) {
-  section {
-    padding: 30px 15px;
-  }
-
-  nav ul {
-    gap: 30px;
-  }
-}
-
-/* 🌱 Componentes reutilizáveis */
-:root {
-  --cor-principal: #005f86;
-  --cor-hover: #00486a;
-  --cor-fundo-claro: #f9f9f9;
-  --cor-texto: #333;
-}
-
-/* 🎠 Carrossel moderno */
-.carousel {
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  margin-bottom: 40px;
-  border-radius: 12px;
-}
-
-/* 🖼️ Container com proporção fluida e altura refinada */
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  max-height: 400px;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-/* 🧭 Trilho de imagens */
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* 📷 Imagem ajustada e elegante */
-.carousel-image {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  display: block;
-}
-
-/* 🔽 Botões laterais discretos */
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  color: #000;
-  font-size: 2rem;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-  user-select: none;
-}
-
-.carousel-btn:hover,
-.carousel-btn:focus {
-  opacity: 1;
-  outline: none;
-}
-
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
-}
-
-/* 📑 Texto sobreposto ou abaixo */
-.carousel-caption {
-  text-align: center;
-  padding: 20px 15px;
-  background-color: #f9f9f9;
-}
-
-/* 📱 Ajustes mobile-first */
-@media (max-width: 768px) {
-  .carousel-container {
-    aspect-ratio: 4 / 3;
-    max-height: 280px;
-  }
-
-  .carousel-btn {
-    font-size: 1.6rem;
-  }
-
-  .carousel-btn.prev {
-    left: 6px;
-  }
-
-  .carousel-btn.next {
-    right: 6px;
-  }
-
-  .carousel-caption h1 {
-    font-size: 1.3rem;
-  }
-
-  .carousel-caption p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-container {
-    aspect-ratio: 3 / 2;
-    max-height: 220px;
-  }
-
-  .carousel-btn {
-    font-size: 1.4rem;
-  }
-
-  .carousel-caption h1 {
-    font-size: 1.2rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.95rem;
-  }
-}
