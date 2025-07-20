@@ -1,19 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Novo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Funerária X oferece acolhimento, planos acessíveis e atendimento humanizado nos momentos mais delicados." />
+  <meta name="keywords" content="funerária, atendimento, planos, acolhimento, Criciúma, SC" />
+  <meta name="author" content="Funerária X" />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
+  <title>Funerária X — Acolhimento e Soluções</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <Header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </Header>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-label="Página inicial">Início</a></li>
+        <li><a href="servicos.html" aria-label="Nossos serviços">Serviços</a></li>
+        <li><a href="sobre.html" aria-label="Sobre nós">Sobre</a></li>
+        <li><a href="contato.html" aria-label="Página de contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carousel" aria-label="Banner principal com destaques">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <img src="assets/images/banners/banner-principal.jpg"
+              alt="Imagem de destaque com acolhimento"
+              class="carousel-image active"
+              loading="lazy" />
+        </div>
+
+        <!-- Setas laterais sem fundo -->
+        <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+        <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+      </div>
+
+      <div class="carousel-caption">
+        <h1>Acolhimento nos momentos importantes</h1>
+        <p>Cuidado e tranquilidade para você e sua família.</p>
+        <a href="servicos.html" class="btn">Ver opções disponíveis</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Planos e Soluções</h2>
+
+      <article>
+        <img src="assets/images/plano-basico.jpg" alt="Imagem ilustrativa do plano básico" />
+        <h3>Opção Básica</h3>
+        <p>Serviço essencial com atenção e respeito.</p>
+        <ul>
+          <li>Transporte</li>
+          <li>Item padrão</li>
+          <li>Assistência documental</li>
+        </ul>
+        <a href="contato.html" class="btn">Solicitar atendimento</a>
+      </article>
+
+      <article>
+        <img src="assets/images/plano-familiar.jpg" alt="Imagem ilustrativa do plano familiar" />
+        <h3>Opção Familiar</h3>
+        <p>Pensado para quem busca segurança para todos.</p>
+        <ul>
+          <li>Cobertura ampla</li>
+          <li>Item completo</li>
+          <li>Assistência presencial</li>
+        </ul>
+        <a href="contato.html" class="btn">Falar com especialista</a>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>Estamos disponíveis para conversar sempre que precisar.</p>
+      <img src="assets/images/contato.jpg" alt="Imagem representando contato e atendimento" />
+      <a href="contato.html" class="btn">Enviar mensagem</a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/images/logo-footer.png" alt="Logotipo da Funerária X" />
+    <p>© 2025 Funerária X — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
