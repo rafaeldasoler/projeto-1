@@ -32,22 +32,19 @@ header {
 }
 
 nav {
-  border: 2px solid blue;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 10vh;
 }
 
 .logo {
-  border: 2px solid blueviolet;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
 .nav-list {
-  border: 2px solid greenyellow;
   list-style: none;
   display: flex;
 }
