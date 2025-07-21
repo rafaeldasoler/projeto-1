@@ -20,14 +20,16 @@ body {
   background-color: #f4f4f4;
 }
 
+#container {
+  width: 98vw;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 /*mobile first*/
 
 
-
-.container {
-  width: 1280px;
-  margin: 0 auto;
-}
 
 
 
