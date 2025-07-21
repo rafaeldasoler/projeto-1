@@ -21,15 +21,19 @@ body {
 }
 
 #container {
-  width: 80vw;
-  margin: 0 auto;
-  border-radius: 5px;
+  width: 100vw;
+}
+
+header {
+  border: 1px solid red;
   padding: 5px;
 }
 
-/*mobile first*/
+main {
+  border: 1px solid blue;
+  width: 95vw;
+}
 
-
-
-
-
+footer {
+  border: 1px solid green;
+}
