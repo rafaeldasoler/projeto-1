@@ -8,177 +8,261 @@
   box-sizing: border-box;
 }
 
+/* Estilos globais */
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #000000;
   background-color: #f4f4f4;
+  overflow-x: hidden;
 }
 
-/* Cabeçalho */
+/* Container fluido */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cabeçalho e navegação */
 header {
-  background-color: #23232e;
-  box-shadow: 0px 3px 10px #ffffff;
+  background-color: #ececec;
+  padding: 5px;
 }
 
-.nav-bar {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
-  padding: 3px;
+  padding: 1rem 0;
 }
 
 .logo {
   display: flex;
-  align-items: center;
+  font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 3px;
+  align-items: center;
 }
 
-/* Carrossel */
-.carrossel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  aspect-ratio: 16 / 7;
-  border-radius: 8px;
+.logo h1 {
+  color: #ffffff;
 }
 
-.slider {
-  height: 100%;
+.nav-list {
+  display: none;
+  align-items: center;
 }
 
-.slides {
+.nav-list ul {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  height: 100%;
-  width: 100%;
+  justify-content: center;
+  list-style: none;
 }
 
-.slide {
-  flex: 0 0 100%;
-  height: 100%;
+.nav-item {
+  margin: 0 15px;
 }
 
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.nav-link {
+  text-decoration: none;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-icon {
   display: block;
 }
 
-.controles {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  padding: 0 1rem;
-  pointer-events: none;
-}
-
-.btn-prev,
-.btn-next {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+.mobile-menu-icon button {
+  background-color: transparent;
   border: none;
-  font-size: 2rem;
-  padding: 0.5rem;
-  border-radius: 50%;
   cursor: pointer;
-  pointer-events: all;
-  transition: background-color 0.3s;
 }
 
-.btn-prev:hover,
-.btn-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.carrossel {
-  position: relative;
-  overflow: hidden;
-}
-
-.slides {
+.mobile-menu ul {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu .nav-item {
+  display: block;
+  padding-top: 1.2rem;
+}
+
+.mobile-menu .login-button {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.mobile-menu .login-button button {
   width: 100%;
 }
 
-.slide {
-  min-width: 100%;
-  position: relative;
+.open {
+  display: block;
 }
 
-.carrossel-titulo-descricao {
-  position: absolute;
-  z-index: 2;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  text-align: left;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  max-width: 90%;
-  font-size: 1.5rem;
-  transition: opacity 0.5s ease-in-out;
+/* Missão, Visão e Valores */
+
+.valores-detalhados {
+  padding: 60px 20px;
+  background-color: #f6fbf9;
+  text-align: center;
 }
 
-/* Botões */
-.btn-prev,
-.btn-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  border: none;
+.valores-detalhados h2 {
   font-size: 2rem;
-  cursor: pointer;
-  z-index: 3;
-  padding: 0.5rem 1rem;
+  color: #004080;
+  margin-bottom: 16px;
 }
 
-.btn-prev {
-  left: 10px;
+.valores-detalhados p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
 }
 
-.btn-next {
-  right: 10px;
+.bloco-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
+.valor-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 25px;
+  width: 250px;
+  text-align: center;
+}
+
+.valor-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 12px;
+}
+
+.valor-item h3 {
+  font-size: 1.2rem;
+  color: #25D366;
+  margin-bottom: 8px;
+}
+
+.valor-item p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.valores-final {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* Destaque da Empresa */
+.empresa-destaque {
+  text-align: center;
+  background-color: #f0f8f7;
+  padding: 60px 20px;
+  border-top: 2px solid #25D366;
+}
+
+.empresa-destaque h2 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.empresa-destaque p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.indicadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.indicador {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 25px;
+  width: 200px;
+}
+
+.indicador h3 {
+  font-size: 2rem;
+  color: #25D366;
+  margin-bottom: 8px;
+}
+
+.indicador p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Botão de ação */
+.cta-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #1ebea5;
+}
+
+
+/* Responsivo */
 @media screen and (max-width: 768px) {
-    .img-desktop {
-      display: none;
-    }
+  .carrossel {
+    aspect-ratio: 16 / 9;
+  }
 
-    .img-mobile {
-      display: block;
-      width: 100%;
-    }
-    .slide img {
-      width: 20%;
-    }
+  .slide img {
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+  }
 
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 250%;
-      align-items: center;
-    }
-    .controles {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-    }
+  .btn-prev,
+  .btn-next {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+  }
+
+  .carrossel-titulo-descricao {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    max-width: 98%;
+  }
 }
