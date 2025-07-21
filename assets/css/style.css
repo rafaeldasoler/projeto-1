@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  padding: 1rem;
+  padding: 3px;
 }
 
 .logo {
@@ -131,50 +131,17 @@ header {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Botões */
-.btn-prev,
-.btn-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 3;
-  padding: 0.5rem 1rem;
+
+/**
+nav ul li a {
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
+  **/
 
-.btn-prev {
-  left: 10px;
-}
 
-.btn-next {
-  right: 10px;
-}
 
-/* Responsivo */
-@media screen and (max-width: 768px) {
-  .carrossel {
-    aspect-ratio: 16 / 9;
-  }
 
-  .slide img {
-    height: auto;
-    max-height: 60vh;
-    object-fit: contain;
-  }
 
-  .btn-prev,
-  .btn-next {
-    font-size: 1.5rem;
-    padding: 0.3rem;
-  }
 
-  .carrossel-titulo-descricao {
-    font-size: 1rem;
-    padding: 0.7rem 1rem;
-    max-width: 98%;
-  }
-}
+
