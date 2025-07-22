@@ -40,31 +40,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  height: 8vh;
+  padding: 1rem;
 }
 
 .logo {
-  display: flex;
-  font-size: 1.1em;
+  font-size: 24px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  align-items: center;
-}
-
-.logo h1 {
-  color: #ffffff;
+  letter-spacing: 4px;
 }
 
 .nav-list {
-  display: none;
-  align-items: center;
-}
-
-.nav-list ul {
-  display: flex;
-  justify-content: center;
   list-style: none;
-  display: flex;
 }
 
 .nav-list li {
@@ -124,6 +111,8 @@ nav ul li a {
   font-size: 2rem;
   padding: 10px;
   cursor: pointer;
+  pointer-events: all;
+  transition: background-color 0.3s;
 }
 .btn-prev:hover, .btn-next:hover {
   background-color: rgba(0,0,0,0.8);
