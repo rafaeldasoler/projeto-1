@@ -13,45 +13,146 @@
 </head>
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" aria-label="Página inicial">Início</a></li>
-        <li><a href="servicos.html" aria-label="Nossos serviços">Serviços</a></li>
-        <li><a href="sobre.html" aria-label="Informações sobre a empresa">Sobre</a></li>
-        <li><a href="contato.html" aria-label="Página de contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header><!-- Inicio Logo e navegação -->        
+        <nav class="nav-bar">
+            <div class="logo">
+              <h1>LOGO</h1>
+            </div>            
+            <menu class="nav-list">
+              <ul>
+                  <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                  <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                  <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+              </ul>
+            </menu>
+            <div class="mobile-menu-icon">
+              <button onclick="menuShow()"><img src="assets/images/icons/menu_white_36dp.svg" alt="Menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+          <ul>
+                  <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                  <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                  <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+              </ul>              
+        </div>
+      </header><!-- Fim Logo e navegação -->
 
   <main>
-    <section>
-      <img src="assets/images/equipe.jpg" alt="Equipe acolhedora e profissional da Funerária X" />
-      <h1>Sobre Nós</h1>
-      <p>Somos dedicados a prestar apoio nos momentos que exigem sensibilidade e respeito. Com experiência, empatia e responsabilidade, oferecemos soluções que priorizam o conforto e a segurança de todos os envolvidos.</p>
+    <section class="sobre-empresa">
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <h1>Quem Somos</h1>
+          <p>A Funerária X é referência em acolhimento e respeito em Criciúma e região. Nossa missão é oferecer suporte integral em momentos delicados, com empatia e eficiência.</p>
+
+          <p>Com uma equipe dedicada e altamente treinada, atuamos com responsabilidade, ética e discrição em cada atendimento. Estamos preparados para orientar famílias, preservar memórias e assegurar a tranquilidade necessária para atravessar cada etapa do processo.</p>
+
+          <ul>
+            <li>🌿 Mais de 10 anos de experiência</li>
+            <li>🤝 Atendimento humanizado 24h</li>
+            <li>🏅 Reconhecimento regional em qualidade e confiança</li>
+            <li>📍 Estrutura completa com ambiente acolhedor</li>
+          </ul>
+        </div>
+
+        <div class="sobre-imagem">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/banners/atendimento-640-427.jpg" />
+            <img src="assets/images/banners/atendimento.jpg" alt="Equipe acolhedora e profissional da Funerária X" />
+          </picture>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <img src="assets/images/estrutura.jpg" alt="Ambiente acolhedor e estruturado da Funerária X" />
+    <section class="estrutura-simples">
       <h2>Nossa Estrutura</h2>
-      <p>Contamos com espaços preparados para atender com privacidade, serenidade e conforto. Cada detalhe é pensado para tornar o processo mais leve e humano.</p>
+      <p>Ambientes pensados para acolher com privacidade, serenidade e respeito. Conheça nossos espaços:</p>
+
+      <div class="galeria-estrutura">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/banners/recepcao-640-427.jpg" />
+          <img src="assets/images/banners/recepcao.jpg" alt="Sala de recepção confortável" />
+        </picture>
+
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/banners/ambiente-funebre-640-427.jpg" />
+          <img src="assets/images/banners/ambiente-funebre.jpg" alt="Ambiente preparado para cerimônias" />
+        </picture>
+
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/banners/espaco-familia-640-427.jpg" />
+          <img src="assets/images/banners/espaco-familia.jpg" alt="Espaço reservado para familiares" />
+        </picture>
+      </div>
     </section>
 
-    <section>
-      <img src="assets/images/valores.jpg" alt="Ícones representando valores éticos da empresa" />
-      <h2>Valores</h2>
-      <ul>
-        <li>Empatia em cada atendimento</li>
-        <li>Compromisso com a ética</li>
-        <li>Respeito às individualidades</li>
-        <li>Transparência e responsabilidade</li>
-      </ul>
+    <section class="valores-detalhados">
+      <h2>Nossos Valores</h2>
+      <p>Cada ação que tomamos é guiada por princípios sólidos, que refletem nosso compromisso com quem mais precisa de apoio, acolhimento e dignidade.</p>
+
+      <div class="bloco-valores">
+        <div class="valor-item">
+          <img src="assets/images/icons/empatia.png" alt="Ícone de empatia" />
+          <h3>Empatia</h3>
+          <p>Colocamos o ser humano no centro de tudo. Escutamos com sensibilidade e agimos com respeito em cada situação delicada.</p>
+        </div>
+
+        <div class="valor-item">
+          <img src="assets/images/icons/certo.png" alt="Ícone de ética" />
+          <h3>Ética</h3>
+          <p>Atuamos com integridade, honestidade e conformidade total com os regulamentos e boas práticas do setor.</p>
+        </div>
+
+        <div class="valor-item">
+          <img src="assets/images/icons/confiar.png" alt="Ícone de respeito" />
+          <h3>Respeito</h3>
+          <p>Reconhecemos a diversidade e tratamos cada família com cuidado, sem julgamentos ou estereótipos.</p>
+        </div>
+
+        <div class="valor-item">
+          <img src="assets/images/icons/transparencia.png" alt="Ícone de transparência" />
+          <h3>Transparência</h3>
+          <p>Prestamos contas com clareza, oferecemos informações acessíveis e mantemos uma comunicação aberta desde o primeiro contato.</p>
+        </div>
+      </div>
+
+      <p class="valores-final">Esses valores não são apenas palavras — são ações vividas todos os dias por nossa equipe.</p>
     </section>
+
+    <section class="empresa-destaque">
+      <h2>Confiança e Compromisso em Números</h2>
+      <p>Com milhares de atendimentos realizados e reconhecimento regional, somos referência em dignidade e respeito em momentos delicados.</p>
+
+      <div class="indicadores">
+        <div class="indicador">
+          <h3>+10.000</h3>
+          <p>Famílias atendidas com acolhimento</p>
+        </div>
+        <div class="indicador">
+          <h3>98%</h3>
+          <p>Índice de satisfação em pesquisas locais</p>
+        </div>
+        <div class="indicador">
+          <h3>24h</h3>
+          <p>Pronto atendimento, todos os dias</p>
+        </div>
+        <div class="indicador">
+          <h3>★4.9</h3>
+          <p>Avaliação média em plataformas públicas</p>
+        </div>
+      </div>
+
+    <a href="https://wa.me/5532999999999" class="btn-flutuante" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+        💬 Fale conosco agora
+    </a>
   </main>
 
-  <footer>
+  <footer><!-- Inicio Rodapé -->
     <p>© 2025 Funerária X — Todos os direitos reservados.</p>
-  </footer>
+    <p>Desenvolvido por <a href="https://www.seusite.com" target="_blank">Equipe X</a></p>
+  </footer><!-- Fim Rodapé -->
 
   <script src="assets/js/script.js"></script>
 </body>

@@ -38,43 +38,119 @@
         </div>
       </header><!-- Fim Logo e navegação -->
       <main><!-- Inicio Conteúdo Principal -->
-        <section class="carousel" aria-label="Banner principal com destaques">
-          <div class="carousel-container">
-            <div class="carousel-track">
-              <img src="assets/images/banners/foto-001-1280-620.jpg"
-                  alt="Imagem de destaque com acolhimento"
-                  class="carousel-image active"
-                  loading="lazy" />
+
+      <section class="carrossel" aria-label="Carrossel de imagens">
+          <div class="slider" id="slider">
+            <div class="slides">
+              <div class="slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/banners/foto-001-640-360.jpg">
+                  <img src="assets/images/banners/foto-001-1280-620.jpg" alt="Imagem 1">
+                </picture>
+                <div class="carrossel-titulo-descricao">
+                  <h1>Serviços de Acolhimento e Soluções</h1>
+                  <p>Oferecemos atendimento humanizado, traslados, preparação, cerimonial e suporte completo para famílias em momentos delicados.</p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/banners/foto-002-640-360.jpg">
+                  <img src="assets/images/banners/foto-002-1280-620.jpg" alt="Imagem 2">
+                </picture>
+                <div class="carrossel-titulo-descricao">
+                  <h1>Traslado e Preparação</h1>
+                  <p>Serviço completo de remoção, preparação e transporte com segurança e dignidade.</p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/banners/foto-003-640-360.jpg">
+                  <img src="assets/images/banners/foto-003-1280-620.jpg" alt="Imagem 3">
+                </picture>
+                <div class="carrossel-titulo-descricao">
+                  <h1>Cerimonial e Apoio</h1>
+                  <p>Organização de cerimônias e suporte às famílias em todas as etapas do processo.</p>
+                </div>
+              </div>
             </div>
-            <!-- Setas laterais sem fundo -->
-            <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
-            <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
-          </div>
-          <div class="carousel-caption">
-            <h1>Acolhimento nos momentos importantes</h1>
-            <p>Cuidado e tranquilidade para você e sua família.</p>
-            <a href="servicos.html" class="btn">Ver opções disponíveis</a>
+
+            <div class="controles">
+              <button class="btn-prev">&#10094;</button>
+              <button class="btn-next">&#10095;</button>
+            </div>
           </div>
         </section>
-        <section>
+
+        <section class="galeria-funeraria">
+          <div id="lightbox">
+            <span class="fechar">&times;</span>
+            <img id="lightbox-img" src="" alt="Visualização" />
+            <p id="lightbox-caption"></p>
+          </div>
+
           <h2>Nossa Funerária</h2>
-          <article>
-            Conteudo 1 foto e dados de endereço
+
+          <article class="item-galeria">
+            <figure>
+              <img src="assets/images/banners/foto-009.jpg" alt="Fachada da funerária" class="imagem-galeria" />
+              <figcaption>Fachada principal da JFP Funerária</figcaption>
+            </figure>
+            <address>
+              <strong>Endereço:</strong><br>
+              Rua das Flores, 1234<br>
+              Centro, Juiz de Fora - MG<br>
+              CEP: 36000-000<br>
+              <strong>Telefone:</strong> (32) 3333-4444
+            </address>
           </article>
-          <article>
-            Conteudo 2 foto
+
+          <article class="item-galeria">
+            <figure>
+              <img src="assets/images/banners/foto-007.jpg" alt="Sala de cerimonial" class="imagem-galeria" />
+              <figcaption>Sala de Cerimonial</figcaption>
+            </figure>
           </article>
-          <article>
-            Conteudo 3 foto
+
+          <article class="item-galeria">
+            <figure>
+              <img src="assets/images/banners/foto-012.jpg" alt="Veículo funerário" class="imagem-galeria" />
+              <figcaption>Veículo para traslados</figcaption>
+            </figure>
           </article>
-          <article>
-            Conteudo 4 foto
+
+          <article class="item-galeria">
+            <figure>
+              <img src="assets/images/banners/foto-011.jpg" alt="Recepção da funerária" class="imagem-galeria" />
+              <figcaption>Recepção acolhedora</figcaption>
+            </figure>
           </article>
         </section>
+        
+        <section class="depoimentos">
+          <h2>Depoimentos</h2>
+          <div class="depoimento">
+            <p>"A equipe foi extremamente atenciosa e prestativa durante um momento tão difícil. Agradeço por todo o suporte."</p>
+            <cite>- Maria da Silva</cite>
+          </div>
+          <div class="depoimento">
+            <p>"Os serviços prestados foram de alta qualidade e com muito respeito. Recomendo a todos."</p>
+            <cite>- João Pereira</cite>
+          </div>
+        </section>
+        <a href="https://wa.me/5532999999999" class="btn-flutuante" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+        💬 Fale conosco agora
+        </a>
       </main><!-- Fim Conteúdo Principal -->
+      
       <footer><!-- Inicio Rodapé -->
         <p>© 2025 Funerária X — Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://www.seusite.com" target="_blank">Equipe X</a></p>
       </footer><!-- Fim Rodapé -->
   </div>
+
+  
+
 </body>
 </html>
