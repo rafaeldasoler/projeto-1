@@ -15,3 +15,9 @@ document.querySelector('.btn-prev').addEventListener('click', () => {
 function updateSlide() {
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
+
+// Fazer os slides mudarem automaticamente a cada 5 segundos
+setInterval(() => {
+  index = (index + 1) % totalSlides;
+  updateSlide();
+}, 5000);
