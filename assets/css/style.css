@@ -39,7 +39,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
+  padding: 3px;
 }
 
 .logo {
@@ -54,72 +55,34 @@ nav {
   gap: 15px;
 }
 
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 15px;
+.nav-item {
+  margin: 0 15px;
 }
 
-
-/**
-nav ul li a {
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-  **/
-
-/*estilo do carrosel*/
-  .carrossel {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
+.nav-link {
+  text-decoration: none;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 400;
 }
 
-.slider {
-  position: relative;
+.mobile-menu {
+  display: none;
 }
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 400%;
-}
-
-.slide {
-  min-width: 100%;
-}
-
-.slide img {
-  width: 25%;
+.mobile-menu-icon {
   display: block;
 }
 
-.controles {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.btn-prev, .btn-next {
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+.mobile-menu-icon button {
+  background-color: transparent;
   border: none;
-  font-size: 2rem;
-  padding: 10px;
   cursor: pointer;
-}
-.btn-prev:hover, .btn-next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.carrossel {
-  position: relative;
-  overflow: hidden;
+  pointer-events: all;
+  transition: background-color 0.3s;
 }
 
-.slides {
+.mobile-menu ul {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
@@ -160,28 +123,10 @@ nav ul li a {
   padding: 0.5rem 1rem;
 }
 
-.btn-prev {
-  left: 10px;
+.mobile-menu .login-button button {
+  width: 100%;
 }
 
-.btn-next {
-  right: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .img-desktop {
-      display: none;
-    }
-
-  .slide img {
-    height: auto;
-    max-height: 60vh;
-    object-fit: contain;
-  }
-
-  .btn-prev,
-  .btn-next {
-    font-size: 1.5rem;
-    padding: 0.3rem;
-  }
+.open {
+  display: block;
 }
