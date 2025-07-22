@@ -7,19 +7,41 @@
   <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
   <title>JFP Funerária — Acolhimento e Soluções</title>
   <link rel="stylesheet" href="assets/css/style.css"/>
+  <script src="assets/js/script.js"></script>
 </head>
 <body>
   <div id="container">
       <header><!-- Inicio Logo e navegação -->        
-        <nav>
-            <a class="logo" href="index.html">JFP FUNERÁRIA</a>
-            <ul class="nav-list">
-                <li><a href="index.html" aria-label="Página inicial">Início</a></li>
-                <li><a href="servicos.html" aria-label="Nossos serviços">Serviços</a></li>
-                <li><a href="sobre.html" aria-label="Sobre nós">Sobre</a></li>
-                <li><a href="contato.html" aria-label="Página de contato">Contato</a></li>
-            </ul>
+        <nav class="nav-bar">
+            <div class="logo">
+              <h1>LOGO</h1>
+            </div>
+            
+            <menu class="nav-list">
+              <ul>
+                  <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                  <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                  <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+              </ul>
+            </menu>
+
+            <div onclick="menuShow()" class="mobile-menu-icon">
+              <button><img src="assets/images/icons/menu_white_36dp.svg" alt="Menu"></button>
+            </div>
+
         </nav>
+
+        <div class="mobile-menu">
+          <ul>
+                  <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                  <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                  <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+              </ul>
+              
+        </div>
+
       </header><!-- Fim Logo e navegação -->
       <main><!-- Inicio Conteúdo Principal -->
         <section class="carousel" aria-label="Banner principal com destaques">
@@ -59,7 +81,6 @@
       <footer><!-- Inicio Rodapé -->
         <p>© 2025 Funerária X — Todos os direitos reservados.</p>
       </footer><!-- Fim Rodapé -->
-      <script src="assets/js/script.js"></script>
   </div>
 </body>
 </html>

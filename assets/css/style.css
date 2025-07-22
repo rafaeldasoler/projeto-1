@@ -24,16 +24,93 @@ body {
   width: 100vw;
 }
 
-header {
-  border: 1px solid red;
-  padding: 5px;
-}
-
 main {
   border: 1px solid blue;
   width: 95vw;
 }
 
-footer {
-  border: 1px solid green;
+/* Cabeçalho */
+header {
+  background-color: #23232e;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 3px;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #ffffff;
+}
+
+.nav-list {
+  display: none;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-icon {
+  display: block;
+}
+
+.mobile-menu-icon button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu .nav-item {
+  display: block;
+  padding-top: 1.2rem;
+}
+
+.mobile-menu .login-button {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.mobile-menu .login-button button {
+  width: 100%;
+}
+
+.open {
+  display: block;
 }
