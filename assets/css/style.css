@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*Mobile First*/
 /* Reset básico */
 * {
   margin: 0;
@@ -30,13 +31,13 @@ header {
 
 .logo {
   display: flex;
-  font-size: 1.1em;
+  align-items: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  align-items: center;
 }
 
 .logo h1 {
+  font-size: 1.1em;
   color: #ffffff;
 }
 
