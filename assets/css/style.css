@@ -123,6 +123,60 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.carrossel {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carrossel-titulo-descricao {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-width: 90%;
+  font-size: 1.5rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Botões */
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 3;
+  padding: 0.5rem 1rem;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+
 /* Responsivo */
 @media screen and (max-width: 768px) {
   .carrossel {
