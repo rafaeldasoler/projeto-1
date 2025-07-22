@@ -26,3 +26,5 @@ setInterval(() => {
   index = (index + 1) % totalSlides;
   updateSlide();
 }, 5000);
+
+updateSlide();
