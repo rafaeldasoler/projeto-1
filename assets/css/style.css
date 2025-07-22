@@ -17,6 +17,7 @@ body {
 /* Cabeçalho */
 header {
   background-color: #23232e;
+  box-shadow: 0px 3px 10px #23232e;
 }
 
 .nav-bar {
