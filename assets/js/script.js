@@ -26,3 +26,14 @@ setInterval(() => {
   index = (index + 1) % totalSlides;
   updateSlide();
 }, 5000);
+
+function menuShow() {
+  let menuMobile = document.querySelector('.mobile-menu');
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open');
+    document.querySelector('.icon').src = "assets/images/icons/menu_white_36dp.svg";
+  } else {
+    menuMobile.classList.add('open');
+    document.querySelector('.icon').src = "assets/images/icons/close_white_36dp.svg";
+  }
+}
