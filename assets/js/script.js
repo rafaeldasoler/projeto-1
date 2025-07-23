@@ -37,3 +37,11 @@ function menuShow() {
     document.querySelector('.icon').src = "assets/images/icons/close_white_36dp.svg";
   }
 }
+
+// Função para fechar o botão flutuante
+function fecharBotao() {
+  const container = document.querySelector('.flutuante-container');
+  if (container) {
+    container.style.display = 'none';
+  }
+}
