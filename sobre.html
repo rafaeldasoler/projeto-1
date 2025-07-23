@@ -50,41 +50,36 @@
           <p>Com uma equipe dedicada e altamente treinada, atuamos com responsabilidade, ética e discrição em cada atendimento. Estamos preparados para orientar famílias, preservar memórias e assegurar a tranquilidade necessária para atravessar cada etapa do processo.</p>
 
           <ul>
-            <li>Mais de 10 anos de experiência</li>
-            <li>Atendimento humanizado 24h</li>
-            <li>Reconhecimento regional em qualidade e confiança</li>
-            <li>Estrutura completa com ambiente acolhedor</li>
+        <li>Mais de 10 anos de experiência</li>
+        <li>Atendimento humanizado 24h</li>
+        <li>Reconhecimento regional em qualidade e confiança</li>
+        <li>Estrutura completa com ambiente acolhedor</li>
           </ul>
         </div>
 
-        <div class="sobre-imagem">
-          <picture>
-            <source media="(max-width: 768px)" srcset="assets/images/banners/atendimento-640-427-1.jpg" />
-            <img src="assets/images/banners/atendimento1.jpg" alt="Equipe acolhedora e profissional da Funerária X" />
-          </picture>
+        <!-- Carrossel de missão, visão e valores -->
+        <div class="carrossel-mvv">
+          <div class="carrossel-container">
+            <div class="carrossel-slide ativo">
+              <img src="assets/images/icons/missao.png" alt="Ícone Missão" />
+              <h2>Missão</h2>
+              <p>Oferecer suporte integral e acolhimento às famílias, com ética, respeito e empatia em todos os momentos.</p>
+            </div>
+            <div class="carrossel-slide">
+              <img src="assets/images/icons/visao.png" alt="Ícone Visão" />
+              <h2>Visão</h2>
+              <p>Ser referência regional em serviços funerários, reconhecida pela excelência, confiança e inovação no atendimento.</p>
+            </div>
+            <div class="carrossel-slide">
+              <img src="assets/images/icons/valores.png" alt="Ícone Valores" />
+              <h2>Valores</h2>
+              <p>Empatia, ética, respeito, transparência e compromisso com a dignidade humana.</p>
+            </div>
+            <!-- Aqui pode deixar o botão oculto e deixar somente o carrossel passando ou colocar as bolinhas ao invés dos botões -->
+            <button class="carrossel-btn prev" aria-label="Anterior">&#10094;</button>
+            <button class="carrossel-btn next" aria-label="Próximo">&#10095;</button>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="estrutura-simples">
-      <h2>Nossa Estrutura</h2>
-      <p>Ambientes pensados para acolher com privacidade, serenidade e respeito. Conheça nossos espaços:</p>
-
-      <div class="galeria-estrutura">
-        <picture>
-          <source media="(max-width: 768px)" srcset="assets/images/banners/recepcao-640-427-1.jpg" />
-          <img src="assets/images/banners/recepcao1.jpg" alt="Sala de recepção confortável" />
-        </picture>
-
-        <picture>
-          <source media="(max-width: 768px)" srcset="assets/images/banners/ambiente-funebre-640-427-1.jpg" />
-          <img src="assets/images/banners/ambiente-funebre1.jpg" alt="Ambiente preparado para cerimônias" />
-        </picture>
-
-        <picture>
-          <source media="(max-width: 768px)" srcset="assets/images/banners/espaco-familia-640-427-1.jpg" />
-          <img src="assets/images/banners/espaco-familia1.jpg" alt="Espaço reservado para familiares" />
-        </picture>
       </div>
     </section>
 
@@ -96,7 +91,7 @@
         <div class="valor-item">
           <img src="assets/images/icons/empatia1.png" alt="Ícone de empatia" />
           <h3>Empatia</h3>
-          <p>Colocamos o ser humano no centro de tudo. Escutamos com sensibilidade e agimos com respeito em cada situação delicada.</p>
+          <p>Escutamos com sensibilidade e agimos com respeito em cada situação.</p>
         </div>
 
         <div class="valor-item">
@@ -121,9 +116,34 @@
       <p class="valores-final">Esses valores não são apenas palavras — são ações vividas todos os dias por nossa equipe.</p>
     </section>
 
+    <section class="estrutura-simples">
+      <h2>Nossa Estrutura</h2>
+      <p>Ambientes pensados para acolher com privacidade, serenidade e respeito. Conheça nossos espaços:</p>
+
+      <!-- Poderia fazer uma função para ampliar as imagens com javascript -->
+      <div class="galeria-estrutura">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/banners/recepcao-640-427-1.jpg" />
+          <img src="assets/images/banners/recepcao1.jpg" alt="Sala de recepção confortável" />
+        </picture>
+
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/banners/ambiente-funebre-640-427-1.jpg" />
+          <img src="assets/images/banners/ambiente-funebre1.jpg" alt="Ambiente preparado para cerimônias" />
+        </picture>
+
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/banners/espaco-familia-640-427-1.jpg" />
+          <img src="assets/images/banners/espaco-familia1.jpg" alt="Espaço reservado para familiares" />
+        </picture>
+      </div>
+    </section>
+
     <section class="empresa-destaque">
-      <h2>Confiança e Compromisso em Números</h2>
-      <p>Com milhares de atendimentos realizados e reconhecimento regional, somos referência em dignidade e respeito em momentos delicados.</p>
+  <h2>Confiança e Compromisso em Nossos Atendimentos</h2>
+  <p>Com milhares de famílias atendidas e forte presença regional, a Funerária X se consolida como referência em cuidado, respeito e acolhimento. Cada serviço prestado reflete nosso compromisso com a dignidade em momentos que exigem sensibilidade e apoio verdadeiro.</p>
+      <div class="destaque-imagem">
+        <img src="assets/images/banners/foto-010-1.jpg" alt="Imagem representando acolhimento" />
 
       <div class="indicadores">
         <div class="indicador">
@@ -151,7 +171,6 @@
 
   <footer><!-- Início Rodapé -->
     <p>© 2025 Funerária X — Todos os direitos reservados.</p>
-    <p>Desenvolvido por <a href="https://www.seusite.com" target="_blank">Equipe X</a></p>
 
     <div class="redes-sociais">
       <a href="https://www.facebook.com/seuperfil" target="_blank" aria-label="Facebook">
