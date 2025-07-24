@@ -124,7 +124,7 @@ footer .redes-sociais a img {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  padding: 2rem;
 }
 
 .sobre-empresa h1 {
@@ -133,54 +133,15 @@ footer .redes-sociais a img {
   margin-bottom: 1rem;
 }
 
-/* Carrossel de Missão, Visão e Valores */
-.carrossel-container *, 
-.carrossel-slide * {
-  all: unset;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-}
-.carrossel-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  height: 100%;
-  margin: auto;
-}
-
-.carrossel-container input[type="radio"] {
-  display: none;
-}
-
-.carrossel-slides {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.carrossel-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 24px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
+/* Carrossel */
+.carrossel-mvv {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  padding: 2rem;
 }
 
-.carrossel-slide img {
-  width: 100px;
-  margin-bottom: 16px;
-}
-
-.carrossel-slide h2 {
+.carrossel-mvv h2 {
   font-size: 1.5em;
   color: #333333;
   margin-bottom: 1rem;
@@ -267,6 +228,207 @@ footer .redes-sociais a img {
 .open {
   display: block;
 }
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+}
+
+/* Seção */
+section {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  flex: auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  height: 91vh;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  flex: auto;
+}
+
+article.intro-text {
+  display: flex;
+  justify-content: center;
+  background: url('/assets/images/banners/flores-002.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.intro-text h1, h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+/* Rodapé */
+footer {
+  background-color: #23232e;
+  color: #ecf0f1;
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+
+}
+
+footer p {
+  margin: 0;
+  font-size: 15px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+footer .redes-sociais {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer .redes-sociais a {
+  margin: 0 10px;
+}
+
+footer .redes-sociais a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Index - Área e botão de contato */
+
+.contato {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-contato {
+  background-color: #23232e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  align-self: center;
+}
+
+.btn-contato:hover {
+  background-color: #1a1a24;
+}
+
+.btn-contato a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Sobre */
+
+.sobre-empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sobre-empresa h1 {
+  font-size: 1.5em;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+/* Carrossel de Missão, Visão e Valores */
+.carrossel-container *, 
+.carrossel-slide * {
+  all: unset;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+.carrossel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+}
+
+.carrossel-container input[type="radio"] {
+  display: none;
+}
+
+.carrossel-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carrossel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.carrossel-slide img {
+  width: 100px;
+  margin-bottom: 16px;
+}
+
+.carrossel-slide h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.carrossel-slide p {
+  max-width: 320px;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Ativa o slide correspondente */
+#radio1:checked ~ .carrossel-slides .slide1,
+#radio2:checked ~ .carrossel-slides .slide2,
+#radio3:checked ~ .carrossel-slides .slide3 {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
 
 /* Botão Flutuante Contato */
 .flutuante-container {
