@@ -8,14 +8,7 @@
   box-sizing: border-box;
 }
 
-/* Cabeçalho */
-header {
-  background-color: #23232e;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
+/*Estilos Gerais*/
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -25,10 +18,115 @@ body {
   height: 100%;
 }
 
+h1,h2,h3 {
+  color: #333333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #23232e;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Navegação */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.logo h1 {
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.nav-list {
+  display: none;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-icon {
+  display: block;
+}
+
+.mobile-menu-icon button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu .nav-item {
+  display: block;
+  padding-top: 1.2rem;
+}
+
+.mobile-menu .login-button {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.mobile-menu .login-button button {
+  width: 100%;
+}
+
+.open {
+  display: block;
+}
+
 /* main */
 main {
   padding: 2rem;
-  background-color: #f9f9f9;;
+  background-color: #f9f9f9;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -59,22 +157,6 @@ article {
   flex: auto;
   min-width: 100vw;
   min-height: 100%;
-}
-
-/* Textos */
-h1,h2,h3 {
-  color: #333333;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-a {
-  color: #000000;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 /* Rodapé */
@@ -193,88 +275,6 @@ footer .redes-sociais a img {
   font-size: 1.5em;
   color: #333333;
   margin-bottom: 1rem;
-}
-
-/* Navegação */
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8vh;
-  padding: 1rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.logo h1 {
-  font-size: 1.1em;
-  color: #ffffff;
-}
-
-.nav-list {
-  display: none;
-  align-items: center;
-}
-
-.nav-list ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.nav-item {
-  margin: 0 15px;
-}
-
-.nav-link {
-  text-decoration: none;
-  font-size: 1em;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.mobile-menu {
-  display: none;
-}
-
-.mobile-menu-icon {
-  display: block;
-}
-
-.mobile-menu-icon button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.mobile-menu ul {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-.mobile-menu .nav-item {
-  display: block;
-  padding-top: 1.2rem;
-}
-
-.mobile-menu .login-button {
-  display: block;
-  padding: 1rem 2rem;
-}
-
-.mobile-menu .login-button button {
-  width: 100%;
-}
-
-.open {
-  display: block;
 }
 
 /* Botão Flutuante Contato */
