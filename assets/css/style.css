@@ -125,38 +125,45 @@ header {
 
 /* main */
 main {
-  padding: 2rem;
-  background-color: #f9f9f9;
-  min-height: 80vh;
+  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 1px;
 }
 
 /* Seção */
 section {
-  background-color: #f9f9f9;
+  border: 2px solid red;
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  padding: 10px;
+  border-radius: 5px;
+  flex: auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  height: 91vh;
+  padding: 5px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   flex: auto;
 }
 
-article {
-  background-color: #f9f9f9;
+article.intro-text {
   display: flex;
-  flex-direction: column;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  flex: auto;
-  min-width: 100vw;
-  min-height: 100%;
+  justify-content: center;
+  background: 
+    linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), /* camada branca semi-transparente */
+    url('/assets/images/banners/flores-002.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.intro-text h1, h2 {
+  color: white;
 }
 
 /* Rodapé */
