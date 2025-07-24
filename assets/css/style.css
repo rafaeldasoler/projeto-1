@@ -18,10 +18,6 @@ body {
   height: 100%;
 }
 
-h1,h2,h3 {
-  color: #333333;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -125,7 +121,6 @@ header {
 
 /* main */
 main {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,7 +130,6 @@ main {
 
 /* Seção */
 section {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -155,15 +149,15 @@ article {
 article.intro-text {
   display: flex;
   justify-content: center;
-  background: 
-    linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), /* camada branca semi-transparente */
-    url('/assets/images/banners/flores-002.jpg') no-repeat center center;
+  background: url('/assets/images/banners/flores-002.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
 }
 
 .intro-text h1, h2 {
   color: white;
+  font-weight: normal;
+  font-size: 2em;
 }
 
 /* Rodapé */
@@ -207,19 +201,6 @@ footer .redes-sociais a {
 footer .redes-sociais a img {
   width: 24px;
   height: 24px;
-}
-
-/* Index */
-.intro {
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-  display: flex
-}
-
-.intro h1 {
-  font-size: 2em;
-  color: #333333;
 }
 
 /* Index - Área e botão de contato */
