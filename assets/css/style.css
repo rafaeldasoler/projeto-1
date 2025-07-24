@@ -32,9 +32,119 @@ a {
 /* Cabeçalho */
 header {
   background-color: #23232e;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  color: #ecf0f1;
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+
+}
+
+footer p {
+  margin: 0;
+  font-size: 15px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+footer .redes-sociais {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer .redes-sociais a {
+  margin: 0 10px;
+}
+
+footer .redes-sociais a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Index */
+.intro {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  display: flex
+}
+
+.intro h1 {
+  font-size: 2em;
+  color: #333333;
+}
+
+/* Index - Área e botão de contato */
+
+.contato {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-contato {
+  background-color: #23232e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  align-self: center;
+}
+
+.btn-contato:hover {
+  background-color: #1a1a24;
+}
+
+.btn-contato a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Sobre */
+
+.sobre-empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.sobre-empresa h1 {
+  font-size: 1.5em;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+/* Carrossel */
+.carrossel-mvv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.carrossel-mvv h2 {
+  font-size: 1.5em;
+  color: #333333;
+  margin-bottom: 1rem;
 }
 
 /* Navegação */
