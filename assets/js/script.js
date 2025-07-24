@@ -1,32 +1,16 @@
-const slidesContainer = document.querySelector('.slides');
-const slideElements = document.querySelectorAll('.slide');
-const totalSlides = slideElements.length;
-let index = 0;
+let contador = 1;
 
-function updateSlide() {
-  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+function trocarSlide() {
+  contador++;
+  if (contador > 3) {
+    contador = 1;
+  }
+  document.getElementById("radio" + contador).checked = true;
 }
 
-document.querySelector('.btn-next').addEventListener('click', () => {
-  index = (index + 1) % totalSlides;
-  updateSlide();
-});
-
-document.querySelector('.btn-prev').addEventListener('click', () => {
-  index = (index - 1 + totalSlides) % totalSlides;
-  updateSlide();
-});
-
-function updateSlide() {
-  slides.style.transform = `translateX(-${index * 100}%)`;
-}
-
-// Fazer os slides mudarem automaticamente a cada 5 segundos
-setInterval(() => {
-  index = (index + 1) % totalSlides;
-  updateSlide();
-}, 5000);
-
+// Troca a cada 6 segundos
+setInterval(trocarSlide, 6000);
+    
 function menuShow() {
   let menuMobile = document.querySelector('.mobile-menu');
   if (menuMobile.classList.contains('open')) {
