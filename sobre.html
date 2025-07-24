@@ -58,28 +58,30 @@
         </div>
 
         <!-- Carrossel de missão, visão e valores -->
-        <div class="carrossel-mvv">
+      <div class="carrossel-mvv">
           <div class="carrossel-container">
-            <div class="carrossel-slide ativo">
-              <img src="assets/images/icons/missao.png" alt="Ícone Missão" />
-              <h2>Missão</h2>
-              <p>Oferecer suporte integral e acolhimento às famílias, com ética, respeito e empatia em todos os momentos.</p>
+            <input type="radio" name="btn-radio" id="radio1" checked>
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="carrossel-slides">
+              <div class="carrossel-slide slide1">
+                <img src="assets/images/icons/missao.png" alt="Ícone Missão" />
+                <h2>Missão</h2>
+                <p>Oferecer suporte integral e acolhimento às famílias...</p>
+              </div>
+              <div class="carrossel-slide slide2">
+                <img src="assets/images/icons/visao.png" alt="Ícone Visão" />
+                <h2>Visão</h2>
+                <p>Ser referência regional em serviços funerários...</p>
+              </div>
+              <div class="carrossel-slide slide3">
+                <img src="assets/images/icons/valor.png" alt="Ícone Valores" />
+                <h2>Valores</h2>
+                <p>Empatia, ética, respeito, transparência...</p>
+              </div>
             </div>
-            <div class="carrossel-slide">
-              <img src="assets/images/icons/visao.png" alt="Ícone Visão" />
-              <h2>Visão</h2>
-              <p>Ser referência regional em serviços funerários, reconhecida pela excelência, confiança e inovação no atendimento.</p>
-            </div>
-            <div class="carrossel-slide">
-              <img src="assets/images/icons/valores.png" alt="Ícone Valores" />
-              <h2>Valores</h2>
-              <p>Empatia, ética, respeito, transparência e compromisso com a dignidade humana.</p>
-            </div>
-            <!-- Aqui pode deixar o botão oculto e deixar somente o carrossel passando ou colocar as bolinhas ao invés dos botões -->
-            <button class="carrossel-btn prev" aria-label="Anterior">&#10094;</button>
-            <button class="carrossel-btn next" aria-label="Próximo">&#10095;</button>
           </div>
-        </div>
       </div>
     </section>
 
@@ -189,7 +191,6 @@
         <p><strong>Telefone:</strong> (48) 99990-2670</p>
       </footer><!-- Fim Rodapé -->
   </div>
-
   <script src="assets/js/script.js"></script>
 </body>
 </html>
