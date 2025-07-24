@@ -1,16 +1,36 @@
+const slides = document.querySelectorAll('.carrossel-slide');
+const radios = document.querySelectorAll('input[name="btn-radio"]');
+const pointers = document.querySelectorAll('.pointer');
+
 let contador = 1;
 
-function trocarSlide() {
-  contador++;
-  if (contador > 3) {
-    contador = 1;
-  }
-  document.getElementById("radio" + contador).checked = true;
+function atualizarSlides() {
+  slides.forEach((slide, index) => {
+    slide.classList.toggle('ativo', contador === index + 1);
+    pointers[index].classList.toggle('ativo', contador === index + 1);
+    radios[index].checked = contador === index + 1;
+  });
 }
 
-// Troca a cada 6 segundos
-setInterval(trocarSlide, 6000);
-    
+// Inicializa
+atualizarSlides();
+
+// Transição automática
+setInterval(() => {
+  contador = contador < slides.length ? contador + 1 : 1;
+  atualizarSlides();
+}, 6000);
+
+// Clique nas bolinhas
+pointers.forEach((pointer, index) => {
+  pointer.addEventListener('click', () => {
+    contador = index + 1;
+    atualizarSlides();
+  });
+});
+
+
+// Função para mostrar/ocultar o menu mobile
 function menuShow() {
   let menuMobile = document.querySelector('.mobile-menu');
   if (menuMobile.classList.contains('open')) {

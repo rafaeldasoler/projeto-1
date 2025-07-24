@@ -58,14 +58,25 @@
         </div>
 
         <!-- Carrossel de missão, visão e valores -->
-      <div class="carrossel-mvv">
+        <div class="carrossel-mvv">
           <div class="carrossel-container">
-            <input type="radio" name="btn-radio" id="radio1" checked>
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
 
+            <!-- inputs e pointers agrupados -->
+            <div class="carrossel-radio-group">
+              <input type="radio" name="btn-radio" id="radio1" checked>
+              <input type="radio" name="btn-radio" id="radio2">
+              <input type="radio" name="btn-radio" id="radio3">
+
+              <div class="carrossel-pointers">
+                <label for="radio1" class="pointer"></label>
+                <label for="radio2" class="pointer"></label>
+                <label for="radio3" class="pointer"></label>
+              </div>
+            </div>
+
+            <!-- slides fora do radio-group -->
             <div class="carrossel-slides">
-              <div class="carrossel-slide slide1">
+              <div class="carrossel-slide slide1 ativo">
                 <img src="assets/images/icons/missao.png" alt="Ícone Missão" />
                 <h2>Missão</h2>
                 <p>Oferecer suporte integral e acolhimento às famílias...</p>
@@ -81,7 +92,9 @@
                 <p>Empatia, ética, respeito, transparência...</p>
               </div>
             </div>
+
           </div>
+        </div>
       </div>
     </section>
 
