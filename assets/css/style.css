@@ -11,7 +11,6 @@
 /* Cabeçalho */
 header {
   background-color: #23232e;
-  box-shadow: 0px 3px 10px #ffffff;
   position: sticky;
   top: 0;
   z-index: 999;
