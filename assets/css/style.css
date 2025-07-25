@@ -257,7 +257,7 @@ article.intro-text {
 
 .sobre-texto h1 {
   font-size: 2.5rem;
-  color: #005e6a;
+  color: #23232e;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -394,12 +394,12 @@ article.intro-text {
 }
 
 .pointer:hover {
-  background-color: #0097a7;
+  background-color: #23232e;
   transform: scale(1.2);
 }
 
 .pointer.ativo {
-  background-color: #005e6a;
+  background-color: #23232e;
 }
 
 /* página sobre - seção de valores */
@@ -479,20 +479,20 @@ article.intro-text {
 /* Página sobre - seção estrutura simples */
 .estrutura-simples {
   padding: 32px 16px;
-  background-color: #f8f8f8;
+  background-color: #f5f6f8; /* neutro bem claro */
   text-align: center;
 }
 
 .estrutura-simples h2 {
   font-size: 20px;
   margin-bottom: 12px;
-  color: #23232e;
+  color: #1f2c40; /* azul-marinho mais escuro */
   text-transform: uppercase;
 }
 
 .estrutura-simples p {
   font-size: 14px;
-  color: #555;
+  color: #445164; /* texto neutro suavemente azulado */
   margin-bottom: 24px;
   line-height: 1.6;
 }
@@ -509,30 +509,29 @@ article.intro-text {
   display: block;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .galeria-estrutura img {
   width: 100%;
   height: auto;
   display: block;
-  cursor: pointer; /* 👈 Isso aqui faz a mágica! */
+  cursor: pointer;
 }
 
 /* Página sobre - seção de destaque */
-
 .empresa-destaque {
-  background-color: #f3f3f3;
+  background-color: #eef0f4;
   padding: 48px 16px;
   text-align: center;
-  color: #333;
+  color: #1f2c40;
 }
 
 .empresa-destaque h2 {
   font-size: 22px;
   margin-bottom: 16px;
   text-transform: uppercase;
-  color: #1e1e28;
+  color: #1a2635; /* azul-marinho profundo para destaque */
 }
 
 .empresa-destaque p {
@@ -540,7 +539,7 @@ article.intro-text {
   margin: 0 auto 32px;
   font-size: 15px;
   line-height: 1.6;
-  color: #555;
+  color: #49586c;
 }
 
 /* Imagem principal */
@@ -549,7 +548,7 @@ article.intro-text {
   max-width: 800px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
   margin-bottom: 32px;
 }
 
@@ -562,59 +561,23 @@ article.intro-text {
 }
 
 .indicador {
-  background: #fff;
+  background: #ffffff;
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .indicador h3 {
   font-size: 20px;
-  color: #007f5f;
+  color: #0f3055; /* azul-marinho intenso para valores */
   margin-bottom: 8px;
 }
 
 .indicador p {
   font-size: 14px;
-  color: #444;
+  color: #3e4f62;
 }
 
-/* Botão flutuante */
-.flutuante-container {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 999;
-}
-
-.btn-flutuante {
-  background-color: #00b37e;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 32px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: background 0.3s;
-}
-
-.btn-flutuante:hover {
-  background-color: #00966c;
-}
-
-.btn-fechar {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background: #fff;
-  border: none;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0 8px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
 
 /* Botão Flutuante Contato */
 .flutuante-container {
