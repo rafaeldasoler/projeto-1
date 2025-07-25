@@ -29,6 +29,39 @@ pointers.forEach((pointer, index) => {
   });
 });
 
+// Função para amplicar as imagens
+document.querySelectorAll('.galeria-estrutura img').forEach(img => {
+  img.addEventListener('click', () => {
+    // Criar o overlay
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.background = 'rgba(0, 0, 0, 0.8)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = 1000;
+
+    // Clonar a imagem e aplicar estilos
+    const clone = img.cloneNode();
+    clone.style.maxWidth = '90%';
+    clone.style.maxHeight = '90%';
+    clone.style.borderRadius = '8px';
+    clone.style.boxShadow = '0 0 24px rgba(0,0,0,0.6)';
+    overlay.appendChild(clone);
+
+    // Fechar ao clicar fora
+    overlay.addEventListener('click', () => {
+      document.body.removeChild(overlay);
+    });
+
+    document.body.appendChild(overlay);
+  });
+});
+
 
 // Função para mostrar/ocultar o menu mobile
 function menuShow() {
