@@ -1,29 +1,83 @@
 @charset "UTF-8";
 
-/* 🔧 Reset básico */
+:root {
+  --cor-001: #008080; /* Azul petróleo */
+  --cor-002: rgb(32, 178, 170); /* Azul petróleo claro */
+  --cor-003: #006d77; /* Azul petróleo médio */
+  --cor-004: #00575b; /* Azul petróleo escuro */
+  --cor-011: #ffffff; /* Branco puro */
+  --cor-012: #f9f9f9; /* Branco neve */
+  --cor-013: #f5f6f8; /* Branco fumaça */
+  --cor-014: #f8f8f8; /* Branco gelo */
+  --cor-015: #f0f2f5; /* Branco cinza claro */
+  --cor-016: #eef0f4; /* Branco acinzentado */
+  --font-001: Helvetica, Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 🌐 Gerais */
+/* INICIO Estilos Gerais */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--font-001);
   font-size: 16px;
-  color: #000;
-  background-color: #f4f4f4;
+  color: #000000;
+  background-color: var(--cor-014);
   width: 100%;
   height: 100%;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  scrollbar-width: none; /* Firefox */
+}
+
+main,
+section,
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+article {
+  height: 92vh;
+  padding: 5px;
+}
+
+header, footer {
+  background-color: var(--cor-003);
+  color: var(--cor-011);
+}
+
+h1 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -39,148 +93,9 @@ button {
 button:hover {
   background-color: #0f3055;
 }
+/* FIM Estilos Gerais */
 
-h1 {
-  font-size: 2.5rem;
-  color: #23232e;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-h2 {
-  font-size: 30px;
-  color: #1f2c40;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 20px;
-  color: #0f3055;
-}
-
-p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #49586c;
-}
-
-main,
-section,
-article {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  flex: auto;
-}
-
-main {
-  align-items: center;
-  justify-content: center;
-  margin: 1px;
-}
-
-article {
-  height: 91vh;
-  padding: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* 🔝 Cabeçalho & Rodapé */
-header,
-footer {
-  background-color: #23232e;
-  color: #ecf0f1;
-  padding: 24px 16px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-footer p {
-  font-size: 15px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a img,
-footer .redes-sociais a img {
-  width: 24px;
-  height: 24px;
-  margin: 0 10px;
-}
-
-footer .redes-sociais {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0;
-}
-
-footer .redes-sociais a {
-  margin: 0 10px;
-}
-
-/* 🏠 Index */
-.intro {
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.intro h1 {
-  font-size: 2em;
-  color: #333;
-}
-
-
-article.intro-text {
-  justify-content: center;
-  background: url('/assets/images/banners/flores-002.jpg') no-repeat center center;
-  background-size: cover;
-  text-align: center;
-}
-
-.intro-text h1,
-.intro-text h2 {
-  color: white;
-  font-weight: normal;
-  font-size: 2em;
-}
-
-/* 📞 Contato */
-.contato {
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.btn-contato {
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 10px;
-  width: 250px;
-  text-align: center;
-  align-self: center;
-  border: none;
-}
-
-.btn-contato:hover {
-  background-color: #1a1a24;
-}
-
-.btn-contato a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* 🧭 Navegação */
+/* INICIO Navegação */
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -198,7 +113,7 @@ article.intro-text {
 
 .logo h1 {
   font-size: 1.1em;
-  color: #fff;
+  color: var(--cor-011);
 }
 
 .nav-list {
@@ -259,6 +174,78 @@ article.intro-text {
 
 .open {
   display: block;
+}
+/* FIM Navegação */
+
+/* Index */
+article.intro-text {
+  background: linear-gradient(
+      rgba(32, 178, 170, 0.9), rgba(32, 178, 170, 0.1)
+    ),
+    url('/assets/images/banners/flores-002.jpg') no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro-text h1, .intro-text h2 {
+  color: var(--cor-011);
+  text-align: center;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a img,
+footer .redes-sociais a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+footer .redes-sociais {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+footer .redes-sociais a {
+  margin: 0 10px;
+}
+
+/* 📞 Contato */
+.contato {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-contato {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  align-self: center;
+  border: none;
+}
+
+.btn-contato:hover {
+  background-color: #1a1a24;
+}
+
+.btn-contato a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* 🏢 Sobre */
