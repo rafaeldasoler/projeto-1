@@ -45,7 +45,7 @@
       <div class="sobre-conteudo">
         <div class="sobre-texto">
           <h1>Quem Somos</h1>
-          <p>A Funerária X é referência em acolhimento e respeito em Criciúma e região. Nossa missão é oferecer suporte integral em momentos delicados, com empatia e eficiência.</p>
+          <p>A Funerária <strong>Vita Serena</strong> é referência em acolhimento e respeito em Criciúma e região. Nossa missão é oferecer suporte integral em momentos delicados, com empatia e eficiência.</p>
 
           <p>Com uma equipe dedicada e altamente treinada, atuamos com responsabilidade, ética e discrição em cada atendimento. Estamos preparados para orientar famílias, preservar memórias e assegurar a tranquilidade necessária para atravessar cada etapa do processo.</p>
 
@@ -60,24 +60,39 @@
         <!-- Carrossel de missão, visão e valores -->
         <div class="carrossel-mvv">
           <div class="carrossel-container">
-            <div class="carrossel-slide ativo">
-              <img src="assets/images/icons/missao.png" alt="Ícone Missão" />
-              <h2>Missão</h2>
-              <p>Oferecer suporte integral e acolhimento às famílias, com ética, respeito e empatia em todos os momentos.</p>
+
+            <!-- inputs e pointers agrupados -->
+            <div class="carrossel-radio-group">
+              <input type="radio" name="btn-radio" id="radio1" checked>
+              <input type="radio" name="btn-radio" id="radio2">
+              <input type="radio" name="btn-radio" id="radio3">
+
+              <div class="carrossel-pointers">
+                <label for="radio1" class="pointer"></label>
+                <label for="radio2" class="pointer"></label>
+                <label for="radio3" class="pointer"></label>
+              </div>
             </div>
-            <div class="carrossel-slide">
-              <img src="assets/images/icons/visao.png" alt="Ícone Visão" />
-              <h2>Visão</h2>
-              <p>Ser referência regional em serviços funerários, reconhecida pela excelência, confiança e inovação no atendimento.</p>
+
+            <!-- slides fora do radio-group -->
+            <div class="carrossel-slides">
+              <div class="carrossel-slide slide1 ativo">
+                <img src="assets/images/icons/missao.png" alt="Ícone Missão" />
+                <h2>Missão</h2>
+                <p>Oferecer suporte integral e acolhimento às famílias...</p>
+              </div>
+              <div class="carrossel-slide slide2">
+                <img src="assets/images/icons/visao.png" alt="Ícone Visão" />
+                <h2>Visão</h2>
+                <p>Ser referência regional em serviços funerários...</p>
+              </div>
+              <div class="carrossel-slide slide3">
+                <img src="assets/images/icons/valor.png" alt="Ícone Valores" />
+                <h2>Valores</h2>
+                <p>Empatia, ética, respeito, transparência...</p>
+              </div>
             </div>
-            <div class="carrossel-slide">
-              <img src="assets/images/icons/valores.png" alt="Ícone Valores" />
-              <h2>Valores</h2>
-              <p>Empatia, ética, respeito, transparência e compromisso com a dignidade humana.</p>
-            </div>
-            <!-- Aqui pode deixar o botão oculto e deixar somente o carrossel passando ou colocar as bolinhas ao invés dos botões -->
-            <button class="carrossel-btn prev" aria-label="Anterior">&#10094;</button>
-            <button class="carrossel-btn next" aria-label="Próximo">&#10095;</button>
+
           </div>
         </div>
       </div>
@@ -89,25 +104,25 @@
 
       <div class="bloco-valores">
         <div class="valor-item">
-          <img src="assets/images/icons/empatia1.png" alt="Ícone de empatia" />
+          <img src="assets/images/icons/empatia.png" alt="Ícone de empatia" />
           <h3>Empatia</h3>
           <p>Escutamos com sensibilidade e agimos com respeito em cada situação.</p>
         </div>
 
         <div class="valor-item">
-          <img src="assets/images/icons/certo1.png" alt="Ícone de ética" />
+          <img src="assets/images/icons/certo.png" alt="Ícone de ética" />
           <h3>Ética</h3>
           <p>Atuamos com integridade, honestidade e conformidade total com os regulamentos e boas práticas do setor.</p>
         </div>
 
         <div class="valor-item">
-          <img src="assets/images/icons/confiar1.png" alt="Ícone de respeito" />
+          <img src="assets/images/icons/confiar.png" alt="Ícone de respeito" />
           <h3>Respeito</h3>
           <p>Reconhecemos a diversidade e tratamos cada família com cuidado, sem julgamentos ou estereótipos.</p>
         </div>
 
         <div class="valor-item">
-          <img src="assets/images/icons/transparencia1.png" alt="Ícone de transparência" />
+          <img src="assets/images/icons/transparencia.png" alt="Ícone de transparência" />
           <h3>Transparência</h3>
           <p>Prestamos contas com clareza, oferecemos informações acessíveis e mantemos uma comunicação aberta desde o primeiro contato.</p>
         </div>
@@ -123,28 +138,28 @@
       <!-- Poderia fazer uma função para ampliar as imagens com javascript -->
       <div class="galeria-estrutura">
         <picture>
-          <source media="(max-width: 768px)" srcset="assets/images/banners/recepcao-640-427-1.jpg" />
-          <img src="assets/images/banners/recepcao1.jpg" alt="Sala de recepção confortável" />
+          <source media="(max-width: 768px)" srcset="assets/images/banners/recepcao-640-427.jpg" />
+          <img src="assets/images/banners/recepcao.jpg" alt="Sala de recepção confortável" />
         </picture>
 
         <picture>
-          <source media="(max-width: 768px)" srcset="assets/images/banners/ambiente-funebre-640-427-1.jpg" />
-          <img src="assets/images/banners/ambiente-funebre1.jpg" alt="Ambiente preparado para cerimônias" />
+          <source media="(max-width: 768px)" srcset="assets/images/banners/ambiente-funebre-640-427.jpg" />
+          <img src="assets/images/banners/ambiente-funebre.jpg" alt="Ambiente preparado para cerimônias" />
         </picture>
 
         <picture>
-          <source media="(max-width: 768px)" srcset="assets/images/banners/espaco-familia-640-427-1.jpg" />
-          <img src="assets/images/banners/espaco-familia1.jpg" alt="Espaço reservado para familiares" />
+          <source media="(max-width: 768px)" srcset="assets/images/banners/espaco-familia-640-427.jpg" />
+          <img src="assets/images/banners/espaco-familia.jpg" alt="Espaço reservado para familiares" />
         </picture>
       </div>
     </section>
 
     <section class="empresa-destaque">
-  <h2>Confiança e Compromisso em Nossos Atendimentos</h2>
-  <p>Com milhares de famílias atendidas e forte presença regional, a Funerária X se consolida como referência em cuidado, respeito e acolhimento. Cada serviço prestado reflete nosso compromisso com a dignidade em momentos que exigem sensibilidade e apoio verdadeiro.</p>
+      <h2>Confiança e Compromisso em Nossos Atendimentos</h2>
+      <p>Com milhares de famílias atendidas e forte presença regional, a Funerária <strong>Vita Serena</strong> se consolida como referência em cuidado, respeito e acolhimento. Cada serviço prestado reflete nosso compromisso com a dignidade em momentos que exigem sensibilidade e apoio verdadeiro.</p>
       <div class="destaque-imagem">
-        <img src="assets/images/banners/foto-010-1.jpg" alt="Imagem representando acolhimento" />
-
+        <img src="assets/images/banners/foto-010.jpg" alt="Imagem representando acolhimento" />
+      </div>
       <div class="indicadores">
         <div class="indicador">
           <h3>+10.000</h3>
@@ -164,13 +179,14 @@
         </div>
       </div>
 
-    <div class="flutuante-container">
-            <button class="btn-fechar" onclick="fecharBotao()">×</button>
-            <a href="https://wa.me/5532999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços" class="btn-flutuante" target="_blank" aria-label="Fale conosco pelo WhatsApp">
-              💬 Fale conosco agora
-            </a>
-          </div>
-      </main><!-- Fim Conteúdo Principal -->
+      <div class="flutuante-container">
+        <button class="btn-fechar" aria-label="Fechar mensagem" onclick="fecharBotao()">×</button>
+        <a href="https://wa.me/5532999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços" class="btn-flutuante" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+          💬 Fale conosco agora
+        </a>
+      </div>
+    </section>
+  </main><!-- Fim Conteúdo Principal -->
 
       <footer><!-- Início Rodapé -->
         <p>© 2025 Funerária <a href="https://www.google.com/maps/dir/?api=1&destination=Avenida+Centenário,+3699,+Sala+A3,+Criciúma,+SC" target="_blank"><strong>Vita Serena</strong></a> — Todos os direitos reservados.</p>
@@ -189,7 +205,6 @@
         <p><strong>Telefone:</strong> (48) 99990-2670</p>
       </footer><!-- Fim Rodapé -->
   </div>
-
   <script src="assets/js/script.js"></script>
 </body>
 </html>
