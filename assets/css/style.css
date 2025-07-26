@@ -10,7 +10,10 @@
   --cor-013: #f5f6f8; /* Branco fumaça */
   --cor-014: #f8f8f8; /* Branco gelo */
   --cor-015: #f0f2f5; /* Branco cinza claro */
-  --cor-016: #eef0f4; /* Branco acinzentado */
+  --cor-016: #eef0f4; /* Branco acinzentado - seção destaque*/
+  --cor-017: #444; /* Cinza escuro - Textos */
+  --cor-018: #23232e; /* Azul marinho - Títulos*/
+  --cor-019: #ccc; /* Cinza claro - Background pointer */
   --font-001: Helvetica, Arial, sans-serif; /* Fonte padrão */
 }
 
@@ -53,6 +56,12 @@ header, footer {
   color: var(--cor-011);
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   font-size: 1.3em;
   text-transform: uppercase;
@@ -82,16 +91,17 @@ a {
 }
 
 button {
-  background-color: #23232e;
+  background-color: var(--cor-004);
   color: #fff;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 12px;
+  
 }
 
 button:hover {
-  background-color: #0f3055;
+  background-color: var(--cor-003);
 }
 /* FIM Estilos Gerais */
 
@@ -219,9 +229,9 @@ footer .redes-sociais a {
   margin: 0 10px;
 }
 
-/* 📞 Contato */
+/* Contato */
 .contato {
-  background-color: #f9f9f9;
+  background-color: var(--cor-012);
   padding: 10px;
   border-radius: 5px;
 }
@@ -239,21 +249,11 @@ footer .redes-sociais a {
   border: none;
 }
 
-.btn-contato:hover {
-  background-color: #1a1a24;
-}
-
-.btn-contato a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* 🏢 Sobre */
+/* Sobre */
 .sobre-empresa {
-  background-color: #f9f9f9;
+  background-color: var(--cor-012);
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
+  color: var(--cor-017);
   align-items: center;
   width: 100%;
   justify-content: space-between;
@@ -267,7 +267,7 @@ footer .redes-sociais a {
 
 .sobre-texto h1 {
   font-size: 2.5rem;
-  color: #23232e;
+  color: var(--cor-018);
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -277,23 +277,10 @@ footer .redes-sociais a {
   font-size: 1.125rem;
   line-height: 1.8;
   margin-bottom: 20px;
-  color: #444;
+  color: var(--cor-017);
 }
 
-.sobre-texto ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.sobre-texto ul li {
-  background: url('assets/images/icons/check.png') no-repeat left center;
-  background-size: 20px;
-  padding-left: 30px;
-  margin-bottom: 12px;
-  font-weight: 500;
-}
-
-/* 🎠 Carrossel */
+/* Carrossel */
 .carrossel-mvv {
   display: flex;
   flex-direction: column;
@@ -371,7 +358,7 @@ footer .redes-sociais a {
   max-width: 320px;
   font-size: 1em;
   line-height: 1.6;
-  color: #444;
+  color: var(--cor-017);
 }
 
 /* Slide ativo via radio */
@@ -396,32 +383,33 @@ footer .redes-sociais a {
   height: 16px;
   display: inline-block;
   border-radius: 50%;
-  background-color: #ccc;
-  border: 2px solid #fff;
+  background-color: var(--cor-019);
+  border: 2px solid var(--cor-011);
   box-shadow: 0 0 2px rgba(0,0,0,0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .pointer:hover {
-  background-color: #23232e;
+  background-color: var(--cor-018);
   transform: scale(1.2);
 }
 
 .pointer.ativo {
-  background-color: #23232e;
+  background-color: var(--cor-018);
 }
 
 /* página sobre - seção de valores */
 .valores-detalhados {
-  background-color: #f8f8f8;
+  background-color: var(--cor-012);
+  width: 100%;
   padding: 40px 16px;
   text-align: center;
 }
 
 .valores-detalhados h2 {
   font-size: 24px;
-  color: #23232e;
+  color: var(--cor-018);
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -429,7 +417,7 @@ footer .redes-sociais a {
 
 .valores-detalhados > p {
   font-size: 16px;
-  color: #444;
+  color: var(--cor-017);
   max-width: 600px;
   margin: 0 auto 32px auto;
   line-height: 1.6;
@@ -443,7 +431,7 @@ footer .redes-sociais a {
 }
 
 .valor-item {
-  background-color: #ffffff;
+  background-color: var(--cor-012);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   padding: 24px;
@@ -464,13 +452,13 @@ footer .redes-sociais a {
 
 .valor-item h3 {
   font-size: 18px;
-  color: #23232e;
+  color: var(--cor-018);
   margin-bottom: 8px;
 }
 
 .valor-item p {
   font-size: 14px;
-  color: #555;
+  color: var(--cor-017);
   line-height: 1.5;
 }
 
@@ -478,7 +466,7 @@ footer .redes-sociais a {
 .valores-final {
   margin-top: 40px;
   font-size: 15px;
-  color: #666;
+  color: var(--cor-017);
   font-style: italic;
   max-width: 600px;
   margin-left: auto;
@@ -489,20 +477,20 @@ footer .redes-sociais a {
 /* Página sobre - seção estrutura simples */
 .estrutura-simples {
   padding: 32px 16px;
-  background-color: #f5f6f8; /* neutro bem claro */
+  background-color: var(--cor-011);
   text-align: center;
 }
 
 .estrutura-simples h2 {
   font-size: 20px;
   margin-bottom: 12px;
-  color: #1f2c40; /* azul-marinho mais escuro */
+  color: var(--cor-018);
   text-transform: uppercase;
 }
 
 .estrutura-simples p {
   font-size: 14px;
-  color: #445164; /* texto neutro suavemente azulado */
+  color: var(--cor-017);
   margin-bottom: 24px;
   line-height: 1.6;
 }
@@ -531,17 +519,18 @@ footer .redes-sociais a {
 
 /* Página sobre - seção de destaque */
 .empresa-destaque {
-  background-color: #eef0f4;
+  background-color: var(--cor-011);
   padding: 48px 16px;
   text-align: center;
-  color: #1f2c40;
+  color: var(--cor-018);
+  width: 100%;
 }
 
 .empresa-destaque h2 {
   font-size: 22px;
   margin-bottom: 16px;
   text-transform: uppercase;
-  color: #1a2635; /* azul-marinho profundo para destaque */
+  color: var(--cor-018); /* azul-marinho profundo para destaque */
 }
 
 .empresa-destaque p {
@@ -549,7 +538,7 @@ footer .redes-sociais a {
   margin: 0 auto 32px;
   font-size: 15px;
   line-height: 1.6;
-  color: #49586c;
+  color: var(--cor-017);
 }
 
 /* Imagem principal */
@@ -571,7 +560,7 @@ footer .redes-sociais a {
 }
 
 .indicador {
-  background: #ffffff;
+  background: var(--cor-011);
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -579,17 +568,287 @@ footer .redes-sociais a {
 
 .indicador h3 {
   font-size: 20px;
-  color: #0f3055; /* azul-marinho intenso para valores */
+  color: var(--cor-018); /* azul-marinho intenso para valores */
   margin-bottom: 8px;
 }
 
 .indicador p {
   font-size: 14px;
-  color: #3e4f62;
+  color: var(--cor-017);
+}
+
+/* Contato - seção ajuda-container */
+.ajuda-container {
+  background-color: var(--cor-012);
+  padding: 60px 20px 20px 25px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 
-/* Botão Flutuante Contato */
+.ajuda-container h1 {
+  font-size: 2.5rem;
+  color: var(--cor-018);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ajuda-container h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ajuda-container p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--cor-017);
+}
+
+
+.ajuda-imagem > img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Contato - Atendimento Detalhado */
+.atendimento-detalhado {
+  background-color: var(--cor-011);
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 10px 20px 15px 25px;
+}
+
+.atendimento-detalhado h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.atendimento-detalhado p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  margin-bottom: 10px;
+}
+
+.disponibilidade {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.titulo-com-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo-com-icone img {
+  width: 50px;
+  height: auto;
+}
+
+.disponibilidade p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  margin: 0;
+}
+
+.atendimento-detalhado p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--cor-017);
+  margin-bottom: 16px;
+}
+
+.atendimento-detalhado ul {
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.atendimento-detalhado ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  color: var(--cor-017);
+}
+
+.atendimento-detalhado ul li::before {
+  content: "";
+  background-image: url('../images/icons/marca-de-verificacao.png');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.atendimento-texto p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  padding: 15px 0px 0px 0px;
+  margin: 0;
+}
+
+.atendimento-texto h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  text-transform: uppercase;
+}
+
+/* Localização */
+.localizacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.localizacao-texto {
+  padding: 25px 0px 0px 10px;
+  text-align: center;
+}
+
+.localizacao-texto h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.localizacao-texto p {
+  font-size: 1.125rem;
+  color: var(--cor-017);
+}
+
+.localizacao-texto a {
+  color: var(--cor-001);
+  transition: color 0.3s ease;
+}
+
+.localizacao-texto a:hover {
+  color: var(--cor-018);
+}
+
+.mapa {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px 25px;
+}
+
+.mapa p {
+  font-size: 1.125rem;
+  color: var(--cor-017);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+
+/* Contato - canais de comunicação */
+.contato {
+  background-color: var(--cor-011);
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.contato h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contato ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contato li {
+  margin-bottom: 18px;
+  color: var(--cor-017);
+  font-size: 1.125rem;
+}
+
+.contato img {
+  width: 32px;
+  align-self: center;
+}
+
+.contato a {
+  color: var(--cor-001);
+  text-decoration: none;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+  color: var(--cor-018);
+}
+
+.contato span {
+  color: var(--cor-001);
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.equipe-contato {
+  background-color: var(--cor-011);
+  padding: 0px 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.equipe-contato h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.equipe-contato picture,
+.equipe-contato img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 980px;
+  height: auto;
+  margin-bottom: 5px;}
+
+.equipe-contato p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  padding-bottom: 10px;
+}
+
+/* Todas as páginas - Botão Flutuante Contato */
 .flutuante-container {
   position: fixed;
   bottom: 30px;
@@ -598,7 +857,7 @@ footer .redes-sociais a {
 }
 
 .btn-flutuante {
-  background-color: #28a745;
+  background-color: var(--cor-001);
   color: white;
   font-weight: bold;
   padding: 12px 20px;
@@ -609,14 +868,14 @@ footer .redes-sociais a {
 }
 
 .btn-flutuante:hover {
-  background-color: #218838;
+  background-color: var(--cor-004);
 }
 
 .btn-fechar {
   position: absolute;
   top: -12px;
   right: -12px;
-  background-color: #ff4d4f;
+  background-color: var(--cor-004);
   color: white;
   border: none;
   border-radius: 50%;

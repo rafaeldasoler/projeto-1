@@ -29,8 +29,8 @@ pointers.forEach((pointer, index) => {
   });
 });
 
-// Função para amplicar as imagens
-document.querySelectorAll('.galeria-estrutura img').forEach(img => {
+// Função para ampliar as imagens
+document.querySelectorAll('.galeria-estrutura img, .equipe-contato img, .ajuda-container img, .empresa-destaque img').forEach(img => {
   img.addEventListener('click', () => {
     // Criar o overlay
     const overlay = document.createElement('div');

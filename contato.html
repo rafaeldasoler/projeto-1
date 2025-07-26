@@ -14,31 +14,31 @@
 <body>
 
   <header><!-- Inicio Logo e navegação -->        
-        <nav class="nav-bar">
-            <div class="logo">
-              <h1>VITA SERENA</h1>
-            </div>            
-            <menu class="nav-list">
-              <ul>
-                  <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                  <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
-                  <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-              </ul>
-            </menu>
-            <div class="mobile-menu-icon">
-              <button onclick="menuShow()"><img src="assets/images/icons/menu_white_36dp.svg" alt="Menu"></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-          <ul>
-                  <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                  <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
-                  <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-              </ul>              
-        </div>
-      </header><!-- Fim Logo e navegação -->
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1>VITA SERENA</h1>
+      </div>            
+      <menu class="nav-list">
+        <ul>
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </menu>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img src="assets/images/icons/menu_white_36dp.svg" alt="Menu"></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>              
+    </div>
+  </header><!-- Fim Logo e navegação -->
 
   <main>
     <section class="ajuda-container">
@@ -47,35 +47,42 @@
         <p>Entre em contato pelo canal que for mais conveniente. Atendimento rápido, discreto e humanizado.</p>
       </div>
       <div class="ajuda-imagem">
-        <img src="assets/images/banners/foto-010-1.jpg" alt="Imagem representando acolhimento" />
+        <img src="assets/images/banners/foto-010.jpg" alt="Imagem representando acolhimento" />
       </div>
     </section>
 
-    <section class="disponibilidade">
-      <h2>Disponibilidade</h2>
-      <p>Estamos disponíveis todos os dias, 24 horas, inclusive feriados.</p>
-      <img src="assets/images/icons/disponibilidade1.png" alt="Ícone de relógio indicando disponibilidade" />
-    </section>
     <section class="atendimento-detalhado">
-      <h2>Nosso Compromisso com Você</h2>
-      <p>Nosso atendimento vai além da formalidade. Estamos preparados para acolher com respeito, orientar com clareza e agir com agilidade em todos os momentos.</p>
+      <div class="disponibilidade">
+        <div class="titulo-com-icone">
+          <img src="assets/images/icons/disponibilidade.png" alt="Ícone de relógio indicando disponibilidade" />
+          <h2>Disponibilidade</h2>
+        </div>
+        <p>Estamos disponíveis todos os dias, 24 horas, inclusive feriados.</p>
+      </div>
+      <div class="atendimento-texto">
+        <h2>Nosso Compromisso com Você</h2>
+        <p>Nosso atendimento vai além da formalidade. Estamos preparados para acolher com respeito, orientar com clareza e agir com agilidade em todos os momentos.</p>
 
-      <ul>
-        <li>🕊️ Atendimento humanizado, com escuta ativa e acolhimento emocional</li>
-        <li>🚐 Resposta rápida em casos urgentes, com equipe de plantão 24h</li>
-        <li>📄 Suporte em documentação e trâmites legais</li>
-        <li>🏛️ Acompanhamento completo antes, durante e após o serviço</li>
-        <li>🤝 Privacidade e discrição garantidas em todo o processo</li>
-      </ul>
+        <p>Oferecemos:</p>
+        <ul>
+          <li>Atendimento humanizado, com escuta ativa e acolhimento emocional</li>
+          <li>Resposta rápida em casos urgentes, com equipe de plantão 24h</li>
+          <li>Suporte em documentação e trâmites legais</li>
+          <li>Acompanhamento completo antes, durante e após o serviço</li>
+          <li>Privacidade e discrição garantidas em todo o processo</li>
+        </ul>
 
-      <p>Estamos prontos para orientar famílias com sensibilidade e clareza, oferecendo soluções sob medida para cada necessidade.</p>
+        <p>Estamos prontos para orientar famílias com sensibilidade e clareza, oferecendo soluções sob medida para cada necessidade.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Localização</h2>
-      <p>Nosso atendimento presencial está localizado em Criciúma, SC. <a href="https://www.google.com/maps/dir/?api=1&destination=Avenida+Centenário,+3699,+Sala+A3,+Criciúma,+SC" target="_blank">📍 Obter rota até aqui</a></p>
-      <p>Veja nosso mapa interativo abaixo:</p>
+    <section class="localizacao">
+      <div class="localizacao-texto">
+        <h2>Localização</h2>
+        <p>Nosso atendimento presencial está localizado em Criciúma, SC. <strong>Endereço:</strong> Avenida Centenário, nº 3699, Sala A3 — Criciúma/SC</p>
+      </div>
       <div class="mapa">
+        <p>Veja nosso mapa interativo abaixo:</p>
       <div style="width: 100%; height: 300px;">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.308496977879!2d-49.369336624662516!3d-28.680416975638675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9521827fc1e1223f%3A0xb073e5d3a6020682!2sAv.%20Centen%C3%A1rio%2C%203699%20-%20a3%20-%20Santa%20Barbara%2C%20Crici%C3%BAma%20-%20SC%2C%2088802-000!5e0!3m2!1spt-PT!2sbr!4v1753318340526!5m2!1spt-PT!2sbr"
           width="100%"
@@ -92,40 +99,39 @@
       <h2>Fale com nossa equipe</h2>
       <ul>
         <li>
-          <img src="assets/images/icons/whatsapp.png-1" alt="WhatsApp" />
-          <a href="https://wa.me/5532999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços" target="_blank">WhatsApp direto</a>
+          <img src="assets/images/icons/whatsapp.png" alt="WhatsApp" />
+          <a href="https://wa.me/5548999902670?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços" target="_blank">WhatsApp direto</a>
         </li>
         <li>
-          <img src="assets/images/icons/o-email.png-1" alt="Email" />
-          <a href="mailto:email@exemplo.com">email@exemplo.com</a>
+          <img src="assets/images/icons/e-mail.png" alt="Email" />
+          <a href="mailto:vitaserenacriciuma@gmail.com">vitaserenacriciuma@gmail.com</a>
         </li>
         <li>
-          <img src="assets/images/icons/contato.png-1" alt="Telefone" />
-          <a href="tel:+55XXXXXXXXXX">(XX) XXXX-XXXX</a>
+          <img src="assets/images/icons/facebook.png" alt="Facebook" />
+          <a href="http://facebook.com/seuperfil" target="_blank">Facebook: @seuperfil</a>
         </li>
         <li>
-          <img src="assets/images/icons/facebook.png-1" alt="Facebook" />
-          <span>Facebook: @seuperfil</span>
+          <img src="assets/images/icons/instagram.png" alt="Instagram" />
+          <a href="http://instagram.com/seuperfil" target="_blank">Instagram: @seuperfil</a>
         </li>
         <li>
-          <img src="assets/images/icons/instagram.png-1" alt="Instagram" />
-          <span>Instagram: @seuperfil</span>
-        </li>
-        <li>
-          <img src="assets/images/icons/horario.png-1" alt="Horário de atendimento" />
+          <img src="assets/images/icons/disponibilidade.png" alt="Horário de atendimento" />
           <span>Atendimento 24h, todos os dias</span>
       </ul>
     </section>
 
     <section class="equipe-contato">
       <h2>Quem vai te atender</h2>
-      <img src="assets/images/equipe-contato.jpg" alt="Equipe de atendimento" />
+      <picture>
+        <source media="(min-width: 800px)" srcset="assets/images/banners/atendimento-640-427.jpg">
+        <img src="assets/images/banners/atendimento.jpg" alt="Equipe de atendimento" />
+      </picture>
       <p>Nossa equipe está pronta para atender você.</p>
     </section>
 
     <div class="flutuante-container">
             <button class="btn-fechar" onclick="fecharBotao()">×</button>
-            <a href="https://wa.me/5532999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços" class="btn-flutuante" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+            <a href="https://wa.me/5548999902670?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços" class="btn-flutuante" target="_blank" aria-label="Fale conosco pelo WhatsApp">
               💬 Fale conosco agora
             </a>
           </div>
@@ -140,7 +146,7 @@
           <a href="https://www.instagram.com/seuperfil" target="_blank" aria-label="Instagram">
             <img class="instagram-icon" src="assets/images/icons/instagram.png" alt="Instagram" />
           </a>
-          <a href="https://wa.me/5532999999999?text=Olá%2C%20gostaria%20de%20falar%20com%20vocês" target="_blank" aria-label="WhatsApp">
+          <a href="https://wa.me/5548999902670?text=Olá%2C%20gostaria%20de%20falar%20com%20vocês" target="_blank" aria-label="WhatsApp">
             <img class="whatsapp-icon" src="assets/images/icons/whatsapp.png" alt="WhatsApp" />
           </a>
         </div>
