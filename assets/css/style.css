@@ -253,7 +253,6 @@ footer .redes-sociais a {
 .sobre-empresa {
   background-color: var(--cor-012);
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
   color: var(--cor-017);
   align-items: center;
   width: 100%;
@@ -478,7 +477,7 @@ footer .redes-sociais a {
 /* Página sobre - seção estrutura simples */
 .estrutura-simples {
   padding: 32px 16px;
-  background-color: var(--cor-016);
+  background-color: var(--cor-011);
   text-align: center;
 }
 
@@ -491,7 +490,7 @@ footer .redes-sociais a {
 
 .estrutura-simples p {
   font-size: 14px;
-  color: var(--cor-017); /* texto neutro suavemente azulado */
+  color: var(--cor-017);
   margin-bottom: 24px;
   line-height: 1.6;
 }
@@ -520,10 +519,11 @@ footer .redes-sociais a {
 
 /* Página sobre - seção de destaque */
 .empresa-destaque {
-  background-color: var(--cor-012);
+  background-color: var(--cor-011);
   padding: 48px 16px;
   text-align: center;
   color: var(--cor-018);
+  width: 100%;
 }
 
 .empresa-destaque h2 {
@@ -579,9 +579,273 @@ footer .redes-sociais a {
 
 /* Contato - seção ajuda-container */
 .ajuda-container {
+  background-color: var(--cor-012);
+  padding: 60px 20px 20px 25px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.ajuda-container h1 {
+  font-size: 2.5rem;
+  color: var(--cor-018);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ajuda-container h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ajuda-container p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--cor-017);
+}
+
+
+.ajuda-imagem > img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Contato - Atendimento Detalhado */
+.atendimento-detalhado {
+  background-color: var(--cor-011);
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 10px 20px 15px 25px;
+}
+
+.atendimento-detalhado h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.atendimento-detalhado p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  margin-bottom: 10px;
+}
+
+.disponibilidade {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.titulo-com-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo-com-icone img {
+  width: 50px;
+  height: auto;
+}
+
+.disponibilidade p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  margin: 0;
+}
+
+.atendimento-detalhado p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--cor-017);
+  margin-bottom: 16px;
+}
+
+.atendimento-detalhado ul {
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.atendimento-detalhado ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  color: var(--cor-017);
+}
+
+.atendimento-detalhado ul li::before {
+  content: "";
+  background-image: url('../images/icons/marca-de-verificacao.png');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.atendimento-texto p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  padding: 15px 0px 0px 0px;
+  margin: 0;
+}
+
+.atendimento-texto h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  text-transform: uppercase;
+}
+
+/* Localização */
+.localizacao {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.localizacao-texto {
+  padding: 25px 0px 0px 10px;
+  text-align: center;
+}
+
+.localizacao-texto h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.localizacao-texto p {
+  font-size: 1.125rem;
+  color: var(--cor-017);
+}
+
+.localizacao-texto a {
+  color: var(--cor-001);
+  transition: color 0.3s ease;
+}
+
+.localizacao-texto a:hover {
+  color: var(--cor-018);
+}
+
+.mapa {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px 25px;
+}
+
+.mapa p {
+  font-size: 1.125rem;
+  color: var(--cor-017);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+
+/* Contato - canais de comunicação */
+.contato {
+  background-color: var(--cor-011);
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.contato h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contato ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contato li {
+  margin-bottom: 18px;
+  color: var(--cor-017);
+  font-size: 1.125rem;
+}
+
+.contato img {
+  width: 32px;
+  align-self: center;
+}
+
+.contato a {
+  color: var(--cor-001);
+  text-decoration: none;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+  color: var(--cor-018);
+}
+
+.contato span {
+  color: var(--cor-001);
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.equipe-contato {
+  background-color: var(--cor-011);
+  padding: 0px 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.equipe-contato h2 {
+  font-size: 1.5rem;
+  color: var(--cor-018);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.equipe-contato picture,
+.equipe-contato img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 980px;
+  height: auto;
+  margin-bottom: 5px;}
+
+.equipe-contato p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cor-017);
+  padding-bottom: 10px;
 }
 
 /* Todas as páginas - Botão Flutuante Contato */
@@ -593,7 +857,7 @@ footer .redes-sociais a {
 }
 
 .btn-flutuante {
-  background-color: #28a745;
+  background-color: var(--cor-001);
   color: white;
   font-weight: bold;
   padding: 12px 20px;
@@ -604,14 +868,14 @@ footer .redes-sociais a {
 }
 
 .btn-flutuante:hover {
-  background-color: #218838;
+  background-color: var(--cor-004);
 }
 
 .btn-fechar {
   position: absolute;
   top: -12px;
   right: -12px;
-  background-color: #ff4d4f;
+  background-color: var(--cor-004);
   color: white;
   border: none;
   border-radius: 50%;
